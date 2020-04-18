@@ -1,3 +1,24 @@
+@keyframes imgAnimation {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -200px;
+    top: 0px;
+    transform: scale(0.8);
+  }
+  50% {
+    left: 200px;
+  }
+  75% {
+    left: 100px;
+    transform: scale(0.8);
+  }
+  100% {
+    left: 0px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,7 +188,7 @@ nav {
   flex-direction: column;
   height: 10vh;
   width: 100vw;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.8);
   position: fixed;
 }
 nav h1 {
@@ -217,7 +238,10 @@ footer {
   padding: 10vh 0 0 0;
 }
 .home header img {
-  border-radius: 15px;
+  border-radius: 10px;
+  position: relative;
+  animation: imgAnimation 5s linear 2s 1 alternate;
+  z-index: -1;
 }
 @media (max-width: 500px) {
   .home header img {
@@ -267,6 +291,11 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    width: 92.5%;
+  }
 }
 .home .walk {
   margin-top: 60px;

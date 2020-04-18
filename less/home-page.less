@@ -7,7 +7,10 @@
   }
 
    header img {
-    border-radius: 15px; 
+    border-radius: 10px;
+    position: relative;
+    animation: imgAnimation 5s linear 2s 1 alternate;
+    z-index: -1;
     
 
     @media @phone {
@@ -62,6 +65,10 @@
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        width: 92.5%;
+      }
     }
   }
 

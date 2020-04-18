@@ -165,9 +165,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 8vh;
+  height: 10vh;
   width: 100vw;
   background: #F6F6F6;
+  position: fixed;
 }
 nav h1 {
   font-size: 4rem;
@@ -179,10 +180,21 @@ nav div {
   align-items: stretch;
   width: 35%;
 }
+@media (max-width: 500px) {
+  nav div {
+    width: 90%;
+  }
+}
 nav div a {
   text-decoration: none;
   color: #454A59;
   font-size: 1.6rem;
+  font-weight: 900;
+}
+nav div a:hover {
+  color: white;
+  background: #454A59;
+  border-radius: 5px;
 }
 footer {
   color: #22283B;
@@ -193,6 +205,27 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+.home header {
+  padding: 10vh 0 0 0;
+}
+.home header img {
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -205,11 +238,26 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+  .home .space-images :nth-child(2),
+  .home .space-images :nth-child(3) {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    padding: 0;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -227,8 +275,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px 25px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -236,12 +296,72 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  color: white;
+  background: #22283A;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  line-height: 1.75;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  color: dodgerblue;
+  background: yellow;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    padding: 0;
+  }
+}
+.home #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home #contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 3vh;
+}
+.home #contact .subbtn {
+  color: white;
+  background: #22283A;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  line-height: 1.75;
+  width: 100%;
+}
+.home #contact .subbtn:hover {
+  color: dodgerblue;
+  background: yellow;
 }

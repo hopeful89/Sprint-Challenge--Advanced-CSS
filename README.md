@@ -91,7 +91,7 @@ Your finished project must include all of the following requirements:
 
 * [ x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
-```markdown
+<!-- ```markdown
 1.variables.less
 2.mixins.less
 3.reset.less
@@ -99,7 +99,7 @@ Your finished project must include all of the following requirements:
 5.navigation.less
 6.footer.less
 7.home-page.less
-```
+``` -->
 
 _You will know everything is working properly when you see the styles enabled for the provided content._  
 
@@ -111,17 +111,17 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x ] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x ]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [ x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 

@@ -1,1 +1,26 @@
-// Navigation code here
+nav {
+    .flex(space-around, center);
+    flex-direction: column;
+    height: 8vh;
+    width: 100vw;
+    background: @nav-bg;
+    
+
+    h1 {
+        font-size: 4rem;
+        color: @header-font-color;
+    }
+
+    div {
+        .flex(space-around, stretch);
+        width: 35%;
+        
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+
+        }
+       
+    }
+}

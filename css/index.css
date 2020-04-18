@@ -160,8 +160,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-html {
-  background: red;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 8vh;
+  width: 100vw;
+  background: #F6F6F6;
+}
+nav h1 {
+  font-size: 4rem;
+  color: #23293B;
+}
+nav div {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 35%;
+}
+nav div a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;

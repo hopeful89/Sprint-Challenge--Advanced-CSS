@@ -1,1 +1,21 @@
-// Mixins Here
+.flex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.buttons(@color, @background){
+    color: @color;
+    background: @background;
+    width: 30%;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    line-height: 1.75;
+}
+
+
+.hoverBtn(@color, @background) {
+    color: @color;
+    background: @background;
+}

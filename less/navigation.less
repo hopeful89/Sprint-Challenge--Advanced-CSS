@@ -1,1 +1,35 @@
-// Navigation code here
+nav {
+    .flex(space-around, center);
+    flex-direction: column;
+    height: 10vh;
+    width: 100vw;
+    background: fade(@nav-bg, 80%);
+    position: fixed;
+    
+
+    h1 {
+        font-size: 4rem;
+        color: @header-font-color;
+    }
+
+    div {
+        .flex(space-around, stretch);
+        width: 35%;
+
+        @media @phone {
+            width: 90%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            font-weight: 900;
+
+            &:hover {
+                .hoverBtn(white, @nav-font);
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -24,3 +24,14 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@phone: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 768px)";
+
+
+@keyframes imgAnimation {
+    0%   {left:0px; top:0px;}
+    25%  {left:-200px; top:0px; transform: scale(.8);}
+    50%  { left:200px;}
+    75%  { left:100px; transform: scale(.8);}
+    100% {left:0px;}
+}

@@ -1,0 +1,396 @@
+@keyframes imgAnimation {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -200px;
+    top: 0px;
+    transform: scale(0.8);
+  }
+  50% {
+    left: 200px;
+  }
+  75% {
+    left: 100px;
+    transform: scale(0.8);
+  }
+  100% {
+    left: 0px;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 10vh;
+  width: 100vw;
+  background: rgba(246, 246, 246, 0.8);
+  position: fixed;
+}
+nav h1 {
+  font-size: 4rem;
+  color: #23293B;
+}
+nav div {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 35%;
+}
+@media (max-width: 500px) {
+  nav div {
+    width: 90%;
+  }
+}
+nav div a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+nav div a:hover {
+  color: white;
+  background: #454A59;
+  border-radius: 5px;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+.home header {
+  padding: 10vh 0 0 0;
+}
+.home header img {
+  border-radius: 10px;
+  position: relative;
+  animation: imgAnimation 5s linear 2s 1 alternate;
+  z-index: -1;
+}
+@media (max-width: 500px) {
+  .home header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+  .home .space-images :nth-child(2),
+  .home .space-images :nth-child(3) {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    padding: 0;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    width: 92.5%;
+  }
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px 25px;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: white;
+  background: #22283A;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  line-height: 1.75;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  color: dodgerblue;
+  background: yellow;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    padding: 0;
+  }
+}
+.home #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home #contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 3vh;
+}
+.home #contact .subbtn {
+  color: white;
+  background: #22283A;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  line-height: 1.75;
+  width: 100%;
+}
+.home #contact .subbtn:hover {
+  color: dodgerblue;
+  background: yellow;
+}
